@@ -9,11 +9,9 @@ body {
   background-color: rgba(255, 255, 255, 0.76);
   width: 600px;
   border-radius: 25px;
-
   padding: 25px 150px 50px;
   font-size: large;
   margin: 25px auto;
-
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -37,4 +35,26 @@ input {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.imgEffects {
+  filter: grayscale(80%) opacity(90%);
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: rgba(255, 0, 0, 0.129);
+  border-color: #aaaaaa;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0.264);
+  border-color: #aaaaaa;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }

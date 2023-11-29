@@ -1,5 +1,4 @@
-//Program Title
-//https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates
+//Random Questions Quiz
 
 document.getElementById("btn").addEventListener("click", btnClicked);
 
@@ -35,6 +34,7 @@ function btnClicked() {
 
   //TO MARK IF QUESTION ONE IS RIGHT OR NOT
   if (
+    //This man was wicked cool.
     question2 === "soviet pilot" ||
     question2 === "soviet cosmonaut" ||
     question2 === "cosmonaut" ||
@@ -53,6 +53,7 @@ function btnClicked() {
     correctAns++;
   } else {
     //IF ANSWER IS WRONG
+    // Lets be honest, how could you not know who he is?
     document.getElementById(
       "2answerIs"
     ).innerHTML = `<span class="wrong">   Incorrect</span>
@@ -71,6 +72,7 @@ function btnClicked() {
     correctAns++;
   } else {
     // IF ANSWER IS WRONG
+    //How on Earth did you get the flag wrong
     document.getElementById(
       "3answerIs"
     ).innerHTML = `<span class="wrong">   Incorrect</span>
@@ -89,6 +91,7 @@ function btnClicked() {
     correctAns++;
   } else {
     //IF QUESTION IS WRONG
+    //Don't blame you.
     document.getElementById(
       "4answerIs"
     ).innerHTML = `<span class="wrong">   Incorrect</span>
@@ -104,31 +107,31 @@ function btnClicked() {
     document.getElementById("quizMark").innerHTML = `      <h4>
     Your Score: ${correctAns} / 4 (${score}%)
      </h4>
-     <h4>Perfect!</h4>
+     <h4>Perfect! Are we sure you didn't look these questions on Google, because you are most definitely not meant to get a perfect score on this test...</h4>
       `;
   } else if (score === 75) {
     document.getElementById("quizMark").innerHTML = `      <h4>
       Your Score: ${correctAns} / 4 (${score}%)
       </h4>
-      <h4>Amazing!</h4>
+      <h4>Amazing! You must be very smart (or a very lucky guesser!)</h4>
      `;
   } else if (score === 50) {
     document.getElementById("quizMark").innerHTML = `      <h4>
         Your Score: ${correctAns} / 4 (${score}%)
         </h4>
-        <h4>Almost There!</h4>
+        <h4>Almost There! Thank you for giving this your honest effort!</h4>
        `;
   } else if (score === 25) {
     document.getElementById("quizMark").innerHTML = `      <h4>
         Your Score: ${correctAns} / 4 (${score}%)
    </h4>
-   <h4>Good Try!</h4>
+   <h4>Good Try! Mistakes are how we learn!</h4>
    `;
   } else {
     document.getElementById("quizMark").innerHTML = `      <h4>
         Your Score: ${correctAns} / 4 (${score}%)
    </h4>
-   <h4>Good Try!</h4>
+   <h4>Good Try! I give you premission to look the answers up on Google. Now I know that you didn't cheat!</h4>
    `;
   }
 }
