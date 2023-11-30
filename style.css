@@ -22,6 +22,7 @@ input {
 .correct {
   color: green;
 }
+
 .wrong {
   color: red;
 }
@@ -45,16 +46,15 @@ button {
   transition-duration: 0.4s;
   background-color: rgba(255, 0, 0, 0.129);
   border-color: #aaaaaa;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px 12px;
   border-radius: 4px;
+  width: 600px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 button:hover {
-  background-color: rgba(255, 0, 0, 0.264);
-  border-color: #aaaaaa;
-  font-size: 14px;
-  padding: 10px 12px;
-  border-radius: 4px;
+  background-color: #aaaaaacb;
+  border-color: rgba(255, 0, 0, 0.129);
   cursor: pointer;
 }
